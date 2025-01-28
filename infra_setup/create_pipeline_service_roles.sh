@@ -8,10 +8,22 @@
 # # Read the usernames from the JSON file
 # USERNAMES=$(jq -r 'keys[]' $USERS_FILE)
 
-USERNAMES=("prod")
+USERNAMES=(
+  "prod"
+  "cbar"
+  "lliz"
+  "eyil"
+  "mkuc"
+  "done"
+  "abar"
+  "bkli"
+  "atow"
+  "jrio"
+  "mstr"
+  )
 
 # Iterate through each username and create a CloudFormation stack
-for USERNAME in $USERNAMES; do
+for USERNAME in "${USERNAMES[@]}"; do
   echo "Creating stack for user: $USERNAME"
   aws cloudformation deploy \
     --stack-name "codebuild-codepipeline-service-roles-$USERNAME" \

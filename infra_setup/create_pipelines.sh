@@ -10,6 +10,16 @@
 
 USERS=(
   "prod MatthiasMurray"
+  "mkuc GonGitNow"
+  "eyil elifidc"
+  "done doneill10"
+  "lliz llizima"
+  "cbar cbardalesm1"
+  "atow atown1501"
+  "jrio jriosrodas28"
+  "mstr mike-str"
+  "abar anthonybarrios1"
+  "bkli bklingen"
 )
 
 # Iterate through each username and create a CloudFormation stack
